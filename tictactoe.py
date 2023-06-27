@@ -56,7 +56,7 @@ class TicTacToe():
             elif symbols == ["O", "O", "O"]:
                 self.winner = "Player 2"
                 return "Player 2 wins!"
-
+        self.player = ""
         return ""
 
     def check_tie(self) -> bool:
@@ -156,6 +156,6 @@ if __name__ == '__main__':
     #play = TicTacToe()
     #play.start_game()
 
-    multiplay = MultiPlayTicTacToe(3)
+    multiplay = MultiPlayTicTacToe(3) #Multiplayer
     multiplay.start_game()
 
